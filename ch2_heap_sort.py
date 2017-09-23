@@ -1,7 +1,7 @@
 ﻿def sink(nums, idx, length):
     while idx <= length // 2:
         j = idx * 2
-        if j < length and nums[j] < nums[j+1]:
+        if j < length and nums[j] < nums[j + 1]:
             j += 1
         if nums[idx] >= nums[j]:
             break
@@ -10,8 +10,8 @@
 
 
 def heap_sort(nums):
-    length = len(nums)-1
-    for k in reversed(range(1, length//2+1)):
+    length = len(nums) - 1
+    for k in reversed(range(1, length // 2 + 1)):
         sink(nums, k, length)
 
     while length > 1:
@@ -20,6 +20,7 @@ def heap_sort(nums):
         sink(nums, 1, length)
 
     return nums
+
 
 print(
     heap_sort(["0", "S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"])

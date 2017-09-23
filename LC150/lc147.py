@@ -1,12 +1,7 @@
 """
 Sort a linked list using insertion sort.
 """
-
-
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from util import ListNode, create_node_list, print_node_list
 
 
 def insert_sort(head):
@@ -38,25 +33,6 @@ def insert_sort(head):
         parent.next = temp        # A - D - B -- C - E
 
     return auxiliary.next
-
-
-def create_node_list(nums):
-    first = ListNode(nums[0])
-    parent = first
-    for i in range(1, len(nums)):
-        new_node = ListNode(nums[i])
-        parent.next = new_node
-        parent = new_node
-
-    return first
-
-
-def print_node_list(head):
-    output = []
-    while head:
-        output.append(head.val)
-        head = head.next
-    print(output)
 
 
 def test():
