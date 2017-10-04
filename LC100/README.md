@@ -7,3 +7,5 @@
 83 Remove Duplicates from Sorted List  
 84 Largest Rectangle in Histogram  
 85 Maximal Rectangle  
+86 Partition List  
+92 Reverse Linked List II  

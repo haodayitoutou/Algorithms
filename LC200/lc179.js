@@ -4,7 +4,7 @@ function largest_number(nums) {
     }
     nums = nums.map((element) => {
         return element.toString();
-    })
+    });
     nums.sort((string1, string2) => {
         var number1 = parseInt(string1.concat(string2));
         var number2 = parseInt(string2.concat(string1));
