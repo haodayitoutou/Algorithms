@@ -1,3 +1,5 @@
+153 Find Minimum in Rotated Sorted Array  
+154 Find Minimum in Rotated Sorted Array II  
 160 Intersection of Two Linked Lists  
 164 Maximum Gap  
 175 Combine Two Tables  

@@ -1,8 +1,11 @@
 56 Merge Intervals  
 57 Insert Interval  
 61 Rotate List  
+69 Sqrt(x)  
 71 Simplify Path  
+74 Search a 2D Matrix  
 75 Sort Colors  
+81 Search in Rotated Sorted Array II  
 82 Remove Duplicates from Sorted List II  
 83 Remove Duplicates from Sorted List  
 84 Largest Rectangle in Histogram  

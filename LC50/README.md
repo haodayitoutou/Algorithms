@@ -11,4 +11,7 @@
 25 Reverse Nodes in k-Group  
 29 Divide Two Integers  
 33 Search in Rotated Sorted Array  
+34 Search for a Range  
+35 Search Insert Position  
 42 Trapping Rain Water  
+50 Pow(x, n)  
