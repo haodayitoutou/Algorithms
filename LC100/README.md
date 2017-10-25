@@ -12,3 +12,5 @@
 85 Maximal Rectangle  
 86 Partition List  
 92 Reverse Linked List II  
+94 Binary Tree Inorder Traversal  
+98 Validate Binary Search Tree  

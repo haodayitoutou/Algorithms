@@ -47,23 +47,22 @@ def create_tree_node(nums):
     if not nums:
         return None
     root = TreeNode(nums[0])
+    queue = [root, root]
     i = 1
-    level = [root]
-    while i < len(nums):
-        for node in level:
-            if node.left is None:
-                node.left = TreeNode(nums[i])
-                i += 1
-                break
-            elif node.right is None:
-                node.right = TreeNode(nums[i])
-                i += 1
-                break
-        else:
-            temp = []
-            for node in level:
-                temp.extend([node.left, node.right])
-            level = temp
+    assign_left = True
+    while i < len(nums) and queue:
+        value = nums[i]
+        parent = queue.pop(0)
+        if value is not None:
+            new_node = TreeNode(value)
+            if assign_left:
+                parent.left = new_node
+            else:
+                parent.right = new_node
+            queue.extend([new_node, new_node])
+        assign_left = not assign_left
+        i += 1
+
     return root
 
 
@@ -78,7 +77,6 @@ def print_tree_node(root):
                 temp.extend([lev.left, lev.right])
             else:
                 output.append(None)
-                temp.extend([None, None])
         level = temp
         if not any(level):
             break
@@ -86,3 +84,20 @@ def print_tree_node(root):
     while output and output[-1] is None:
         output.pop()
     print(output)
+
+
+def test():
+    nums_list = [
+        [1],
+        [1, None, 3, None, 4],
+        [1, None, None, 3],
+        [1, 2, 3, 4, 5, 6, 7],
+        [3, 9, 20, None, None, 15, 7],
+        [1, 2, 2, None, 3, None, 3]
+    ]
+    for nums in nums_list:
+        root = create_tree_node(nums)
+        print_tree_node(root)
+
+
+# test()

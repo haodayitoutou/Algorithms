@@ -34,6 +34,22 @@ def traversal(root):
     return res
 
 
+def dfs(root):
+    res = []
+    dfs_traversal(res, root, 0)
+    return res
+
+
+def dfs_traversal(res, node, height):
+    if not node:
+        return
+    if height >= len(res):
+        res.append([])
+    res[height].append(node.val)
+    dfs_traversal(res, node.left, height + 1)
+    dfs_traversal(res, node.right, height + 1)
+
+
 def test():
     nums_list = [
         [],
@@ -44,7 +60,8 @@ def test():
     ]
     for nums in nums_list:
         root = create_tree_node(nums)
-        print(traversal(root))
+        # print(traversal(root))
+        print(dfs(root))
 
 
 test()
