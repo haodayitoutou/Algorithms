@@ -14,3 +14,5 @@
 92 Reverse Linked List II  
 94 Binary Tree Inorder Traversal  
 98 Validate Binary Search Tree  
+99 Recover Binary Search Tree  
+100 Same Tree
