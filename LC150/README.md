@@ -14,6 +14,7 @@
 114 Flatten Binary Tree to Linked List  
 116 Populating Next Right Pointers in Each Node  
 117 Populating Next Right Pointers in Each Node II  
+125 Validate Palindrome  
 129 Sum Root to Leaf Numbers  
 130 Surrounded Regions  
 133 Clone Graph  

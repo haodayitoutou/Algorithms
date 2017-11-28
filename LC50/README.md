@@ -1,6 +1,8 @@
 01 Two Sum  
 02 Add Two Numbers  
 04 Median of Two Sorted Arrays  
+07 Reverse Integer  
+09 Palindrome Number  
 10 Regular Expression Matching  
 11 Container with Most Water  
 15 3 Sum  
