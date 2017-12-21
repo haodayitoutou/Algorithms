@@ -1,5 +1,6 @@
 56 Merge Intervals  
 57 Insert Interval  
+58 Length of Last Word  
 60 Permutation Sequence  
 61 Rotate List  
 69 Sqrt(x)  
